@@ -16,7 +16,9 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+	<link rel='stylesheet prefetch' href='http://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+
 
 	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
 	<meta property="og:url"           content="https://alcoguide.com/" />
@@ -140,14 +142,38 @@
 			<div class="row">
 				<div class="single-product__item">
 					<div class="slide-cont single-product__slider">
-					  <div class="owl-carousel">
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					    <div class="slider__item"><img src="img/slide.png"></div>
-					  </div>
+					  <ul id="lightSlider">
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			            <a href="img/slide.png"><img src="img/slide.png" /></a>
+			        </li>
+			        <li data-thumb="img/slide.png">
+			           <a href="img/slide.png"> <img src="img/slide.png" /></a>
+			        </li>
+			    	</ul>
 					</div>
 					<div class="single-product__info">
 						<div class="single-product__title">Cabernet Sauvignon 2003</div>
@@ -704,11 +730,14 @@
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js'></script>
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js'></script>
+	<script src='http://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 	<script src="js/wNumb.js"></script>
 	<script src="libs/nouislider/nouislider.js"></script>
 	<script>
+
+		$("#lightSlider li a").fancybox();
+
 		//var slider = document.getElementById('test-slider');
 		var rangeSlider = document.getElementById('test-slider');
 	  var moneyFormat = wNumb({

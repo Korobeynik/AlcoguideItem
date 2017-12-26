@@ -34,6 +34,40 @@
 	display: flex
 	justify-content: space-between
 	padding: 0 25px
+
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover
+	opacity: 1
+	border: 2px solid $brown
+	border-radius: 0
+
+.lSAction > a
+	background-image: url("../img/arrow-left.png")
+	background-repeat: no-repeat
+	background-position: center
+	opacity: 1
+	bottom: 0
+.lSAction>.lSNext
+	background-image: url("../img/arrow-right.png")
+	background-position: top	
+
+
+.lSAction
+	position: absolute
+	width: 100%
+	//bottom: -55px
+	top: 47%
+	left: 5px
+	z-index: 1000
+
+.fancybox-bg
+	width: 100% !important
+	height: 100% !important	
+
+.lSSlideWrapper
+	overflow: visible	
+
+.lSSlideOuter .lSPager.lSGallery li
+	opacity: 0.5			
 .owl-carousel .owl-dot
 	width: 49px !important
 	height: 65px !important
@@ -65,7 +99,7 @@
 		background-size: cover
 
 .owl-stage
-	width: 5000px !important
+	width: 15000px !important
 
 .single-product--line
 	display: flex

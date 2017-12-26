@@ -28,6 +28,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/materialize/js/materialize.min.js',
+		// 'app/libs/fancybox/jquery.fancybox-1.3.4.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
