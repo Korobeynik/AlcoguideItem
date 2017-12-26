@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Alcoguide</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.min.css">
+
+	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
+	<meta property="og:url"           content="https://alcoguide.com/" />
+	<meta property="og:type"          content="alcoguide website" />
+	<meta property="og:title"         content="The Future of Sleep Is Near" />
+	<meta property="og:description"   content="Something beautiful is coming. Stay tuned." />
+	<meta property="og:image"         content="https://alcoguide.com/img/share.jpg" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="home">
+
+	<header class="header">
+		<div class="container">
+		
+			<div class="row">
+
+				<div class="col xl5 l12 m12 s12">
+					<div class="logo_block">
+						<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
+						<div class="age_limit">18<span>+</span></div>
+						<div class="logo_descr">Все об алкоголе</div>
+					</div>
+				</div>
+				<div class="col s12 mobile-menu">МЕНЮ</div>
+
+				<div class="col xl7 l12 m12">
+					<div class="user-block">
+						<div class="user-panel">
+							<ul class="list-lang">
+								<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
+							</ul>
+							<ul class="user-panel__list">
+								<li class="user-panel__item"><a href="#"><i class="fa fa-star" aria-hidden="true"></i><span>Избранное</span></a></li>
+								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить тост</span></a></li>
+								<li class="user-panel__item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i><span>Добавить рецепт</span></a></li>
+							</ul>
+						</div>
+						<a href="javascript:void(0)" id="user-login" class="user-login dropdown-button" data-activates="dropdown1">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<div class="user-name">
+								<span>Антон</span>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+							<div class="user-avatar"><img src="img/avatar_small.png" alt="Avatar"></div>
+						</a>
+						<ul id='dropdown1' class='dropdown-content'>
+							<li><a href="#!">one</a></li>
+							<li><a href="#!">two</a></li>
+							<li class="divider"></li>
+							<li><a href="#!">three</a></li>
+							<li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+							<li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col xl6 l6 m12 s12">
+					<div class="form-block">
+						<div class="choise-product">
+							<select>
+								<option value="" selected>Напитки</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+						<form id="search">
+							<span>Найти:</span>
+							<input type="search" required>
+							<label class="label-icon" for="search"></label>
+							<div class="file-btn__wrap input-btn">
+								<input id="file" name="file" type="file" value="">
+								<i class="fa fa-camera" aria-hidden="true"></i>
+							</div>
+							<div class="submit-btn__wrap input-btn">
+								<input id="submit" name="submit" type="submit" value="">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col xl6 l6 m12 s12">
+					<ul class="menu">
+						<li class="menu_item">
+							<a href="#" class="menu_list">Рейтинги</a>
+							<a href="#" class="menu_list">Коктейли</a>
+							<a href="#" class="menu_list">Обзоры</a>
+							<a href="#" class="menu_list">Тосты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+	</header>
+
+	<div class="container breadcrumbs-wrap">
+		<div class="row">
+			<ul class="breadcrumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Вино</a></li>
+				<li class="active"><a href="#">Cabernet Sauvignon 2003</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="single-product">
+		<div class="container">
+			<div class="row">
+				<div class="single-product__item">
+					<div class="slide-cont single-product__slider">
+					  <div class="owl-carousel">
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					    <div class="slider__item"><img src="img/slide.png"></div>
+					  </div>
+					</div>
+					<div class="single-product__info">
+						<div class="single-product__title">Cabernet Sauvignon 2003</div>
+						<div class="single-product--line">
+							<div class="single-product__rating">
+								<div class="rating__number">4.5</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="single-product__price">
+							<span>Средняя цена:</span>
+							<div class="favorite-drinks__item_price">2000р.</div>
+						</div>
+						<div class="single-product__about"><a href="#">Красное</a> из <a href="#">Rutherford, США</a>, урожай <a href="#">2003</a></div>
+						<div class="single-product__table">
+							<ul class="product__table__list">
+								<li class="product__table__item">
+									<span class="name">Винодельня</span>
+									<a class="link" href="#">Burgundy White  <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Виноград</span>
+									<a class="link" href="#">Каберне Сира/Шираз <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Объем</span>
+									<a class="link" href="#">0,75  <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Температура подачи</span>
+									<a class="link" href="#">16° <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+
+							<ul class="product__table__list">
+								<li class="product__table__item">
+									<span class="name">Сахар</span>
+									<a class="link" href="#">П/сладкое <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Цвет</span>
+									<a class="link" href="#">Красный<i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Вкус</span>
+									<a class="link" href="#">Красный  <i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+								<li class="product__table__item">
+									<span class="name">Срок <br> годности</span>
+									<a class="link" href="#">24 мес.<i class="fa fa-check-square-o" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="button"><i class="fa fa-search" aria-hidden="true"></i> Найти в магазинах</a>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="button green"><i class="fa fa-star-o" aria-hidden="true"></i>Добавить в избранное</a>
+						</div>
+						<div class="btn-wrap">
+							<a href="#" class="button bord"><i class="fa fa-glass" aria-hidden="true"></i>Хочу попробовать</a>
+						</div>
+					<ul class="social__list">
+						<li class="social__text">Рекомендовать:</li>
+						<li class="social__item"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href="#"><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="single-product__sidebar">
+					<div class="single-product__similar favorite-cocktails">
+						<div class="similar__title">
+							<div class="icon"><img src="img/icon2.png"></div>
+							<div class="title"><span>Коктейли с</span><br> Cabernet Sauvignon 2003</div>
+						</div>
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Cabernet Sauvignon 2003</div>
+								</div>	
+							</div>
+						</div>
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Cabernet Sauvignon 2003</div>
+								</div>	
+							</div>
+						</div>
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content">
+								<a href="javascript:void(0)" class="favorite-cocktails__item_title">Храбрый бык</a>
+								<div class="favorite-cocktails__item_based">
+									<div class="item_based_text">На основе:</div>
+									<div class="item_based_name">Cabernet Sauvignon 2003</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="similar__content">
+						<a href="#" class="button small">Добавить рецепт</a>
+						<a href="#" class="all-view">Показать все (15)</a>
+					</div>
+
+					<div class="review">
+						<div class="similar__title">
+							<div class="icon"><img src="img/icon-review.png"></div>
+							<div class="title"><span>Лучший отзыв о</span> <br> Cabernet Sauvignon 2003</div>
+						</div>
+					</div>
+					<div class="favorite-cocktails review__item">
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content review__content">
+								<div class="review__title">
+									<a href="javascript:void(0)" class="favorite-cocktails__item_title review__content__name">Антон Емельянов</a>
+									<div class="data">25 окт в 15:41</div>
+								</div>
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+						<div class="review__text">Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы</div>
+						<div class="review__like">
+							<a href="#" class="likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>25</a>
+							<a href="#" class="review__like__more">Читать полностью</a>
+						</div>
+						<div class="similar__content add__review">
+						<a href="#" class="button small">Добавить отзыв</a>
+						<a href="#" class="all-view">Показать все (15)</a>
+					</div>
+					</div>
+
+				</div>
+
+				</div><!-- //single-product__item -->
+			</div>
+		</div><!-- //container -->
+	</div><!-- //single-product -->
+
+	<div class="about-product">
+		<div class="container">
+			<div class="row">
+				<div class="about-product__wrap">
+					<div class="about-product__item combination">
+						<div class="about-product__title"><img src="img/icon4.png"> Сочетается</div>
+						<div class="combination__image">
+							<img src="img/1.png" alt="">
+						</div>
+						<div class="combination__image">
+							<img src="img/2.png" alt="">
+						</div>
+						<div class="combination__image">
+							<img src="img/3.png" alt="">
+						</div>
+						<div class="combination__image">
+							<img src="img/4.png" alt="">
+						</div>
+						<div class="combination__image">
+							<img src="img/add.png" alt="">
+						</div>
+					</div>
+					<div class="about-product__item description">
+						<div class="about-product__title"><img src="img/icon5.svg"> Описание<i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+						<div class="about-product__item__text">Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+					</div>
+					<div class="about-product__item history">
+						<div class="about-product__title"><img src="img/icon6.svg"> История<i class="fa fa-check-square-o" aria-hidden="true"></i></div>
+						<div class="about-product__item__text">Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+					</div>
+				</div>
+
+				<div class="reviews">
+					<div class="about-product__title reviews__title">
+						<img src="img/icon7.svg"> Отзывы
+
+						<div class="choise-product">
+							<select>
+								<option value="" selected>Показать все</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+
+						<div class="filter__form__category__item">
+							<input type="checkbox" class="filled-in" id="red-v" />
+							<label for="red-v">получать уведомления</label>
+						</div>
+					</div>
+
+					<div class="review__item favorite-cocktails">
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content review__content">
+								<div class="review__title">
+									<a href="javascript:void(0)" class="favorite-cocktails__item_title review__content__name">Антон Емельянов</a>
+									<div class="data">25 окт в 15:41</div>
+								</div>
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							</div>
+							<div class="review__text">Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+							<div class="review__like">
+								<a href="#" class="likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>25</a>
+								<a href="#" class="review__like__more">Обратиться</a>
+							</div>
+
+							<div class="review__item--inner-wrap">
+								<a href="#" class="review-show">Свернуть <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+								<div class="review__item--inner-content">
+									<div class="review__item review__item--inner favorite-cocktails">
+										<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+											<div class="favorite-cocktails__item_avatar">
+												<img src="img/avatar_small.png" alt="ava">
+											</div>
+											<div class="favorite-cocktails__item_content review__content">
+												<div class="review__title">
+													<a href="javascript:void(0)" class="favorite-cocktails__item_title review__content__name">Антон Емельянов</a>
+													<div class="data">25 окт в 15:41</div>
+												</div>
+												<div class="item_rating_star">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												</div>
+											</div>
+											</div>
+											<div class="review__text"><span class="name">Антон Емельянов, </span>Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+											<div class="review__like">
+												<a href="#" class="likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>25</a>
+												<a href="#" class="review__like__more">Обратиться</a>
+											</div>
+										</div><!-- //review__iteminner -->
+										<div class="review__item review__item--inner favorite-cocktails">
+										<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+											<div class="favorite-cocktails__item_avatar">
+												<img src="img/avatar_small.png" alt="ava">
+											</div>
+											<div class="favorite-cocktails__item_content review__content">
+												<div class="review__title">
+													<a href="javascript:void(0)" class="favorite-cocktails__item_title review__content__name">Антон Емельянов</a>
+													<div class="data">25 окт в 15:41</div>
+												</div>
+												<div class="item_rating_star">
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star" aria-hidden="true"></i>
+													<i class="fa fa-star-half-o" aria-hidden="true"></i>
+												</div>
+											</div>
+											</div>
+											<div class="review__text"><span class="name">Антон Емельянов, </span>Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+											<div class="review__like">
+												<a href="#" class="likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>25</a>
+												<a href="#" class="review__like__more">Обратиться</a>
+											</div>
+										</div><!-- //review__iteminner -->
+									</div>
+							</div>
+						</div><!-- //review__item -->
+
+						<div class="review__item favorite-cocktails">
+						<div class="col xl12 l6 m6 s12 favorite-cocktails__item base_content_item">
+							<div class="favorite-cocktails__item_avatar">
+								<img src="img/avatar_small.png" alt="ava">
+							</div>
+							<div class="favorite-cocktails__item_content review__content">
+								<div class="review__title">
+									<a href="javascript:void(0)" class="favorite-cocktails__item_title review__content__name">Антон Емельянов</a>
+									<div class="data">25 окт в 15:41</div>
+								</div>
+								<div class="item_rating_star">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							</div>
+							<div class="review__text">Французское белое сухое вино Domaine Robert Klingenfus Blanc Sylvaner. Винодельческое хозяйство Domaine Robert Klingenfus расположено в Эльзасе в местечке Мольшейм, которое ведет свою историю с римских времен. Первые документы, касающиеся виноградников, датируются 820 годом. Также в архивных документах 1513 года упоминается продажа вин с виноградника Bruderthal.</div>
+							<div class="review__like">
+								<a href="#" class="likes"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>25</a>
+								<a href="#" class="review__like__more">Обратиться</a>
+							</div>
+						</div><!-- //review__item -->
+
+					<form class="add-review">
+						<div class="favorite-cocktails__item_avatar">
+							<img src="img/avatar_small.png" alt="ava">
+						</div>
+						<textarea placeholder="Добавить комментарий/отзыв"></textarea>
+						<button class="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Отправить</button>
+					</form>	
+
+				</div><!-- //reviews -->
+
+			</div>
+		</div>
+	</div>
+
+	<div class="favorite">
+		<div class="container">
+			<div class="row">
+				<div class="col xl12 favorite-drinks__title base-title"><img src="img/icon1.png" alt="icon"><span>Похожие напитки</span></div>
+				<div class="col xl12 favorite-drinks l12">
+
+					<div class="favorite-drinks__item-wrap">
+
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<a href="#"><img src="img/product.jpg" alt="product" class="favorite-drinks__item_img"></a>
+							<div class="favorite-drinks__item_content">
+								<a href="#" class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</a>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<a href="#" class="item-brand_name">Champagne, Франция</a>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<a href="#"><img src="img/product.jpg" alt="product" class="favorite-drinks__item_img"></a>
+							<div class="favorite-drinks__item_content">
+								<a href="#" class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</a>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<a href="#" class="item-brand_name">Champagne, Франция</a>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<a href="#"><img src="img/product.jpg" alt="product" class="favorite-drinks__item_img"></a>
+							<div class="favorite-drinks__item_content">
+								<a href="#" class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</a>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<a href="#" class="item-brand_name">Champagne, Франция</a>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+
+						<div class="col xl4 favorite-drinks__item hoverable">
+							<div class="favorite-drinks__star">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+							</div>
+							<a href="#"><img src="img/product.jpg" alt="product" class="favorite-drinks__item_img"></a>
+							<div class="favorite-drinks__item_content">
+								<a href="#" class="favorite-drinks__item_title">Champagne P2 Plenitude Brut 1995</a>
+								<div class="favorite-drinks__item_price">2000р.</div>
+								<div class="favorite-drinks__item_brand">
+									<div class="item-brand_text">Имя бренда:</div>
+									<a href="#" class="item-brand_name">Champagne, Франция</a>
+								</div>
+								<div class="favorite-drinks__item_rating">
+									<div class="item_rating_star">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star-half-o" aria-hidden="true"></i>
+									</div>
+									<div class="favorite-drinks__item_statistics">
+										<a href="#" class="item_rating__reviews"><span>25</span>отзывов</a>
+										<a href="#" class="item_rating__comments"><span>115</span>коментарие</a>
+									</div>
+								</div>	
+									
+									<div class="favorite-drinks__item_about">
+										<a href="#" class="item_about_history">История</a>
+										<a href="#" class="item_about_analog"><span>5</span>аналогов</a>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col xl12">
+					<ul class="footer__menu">
+						<li class="footer__menu__item"><a href="#">Абсент</a></li>
+						<li class="footer__menu__item"><a href="#">Аперитив</a></li>
+						<li class="footer__menu__item"><a href="#">Вермут</a></li>
+						<li class="footer__menu__item"><a href="#">Вино </a></li>
+						<li class="footer__menu__item"><a href="#">Водка</a></li>
+						<li class="footer__menu__item"><a href="#">Джин</a></li>
+						<li class="footer__menu__item"><a href="#">Кальвадос</a></li>
+						<li class="footer__menu__item"><a href="#">Коктейли</a></li>
+						<li class="footer__menu__item"><a href="#">Коньяк</a></li>
+						<li class="footer__menu__item"><a href="#">Ликер</a></li>
+						<li class="footer__menu__item"><a href="#">Пиво</a></li>
+						<li class="footer__menu__item"><a href="#">Ром</a></li>
+						<li class="footer__menu__item"><a href="#">Сакэ</a></li>
+						<li class="footer__menu__item"><a href="#">Шампанское</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col xl3 l12 s12">
+					<div class="col xl12 l6 s12">
+						<div class="logo_block">
+							<a href="index.html" class="logo"><img src="img/logo.png" alt="Alcoquide"></a>
+						</div>
+					</div>
+					<div class="col xl12 l6 m12 s12 footer_lang">
+						<ul class="list-lang">
+							<li class="list-lang__item"><a href="#"><img src="img/lang_ru.png"></a></li>
+							<li class="list-lang__item"><a href="#"><img src="img/lang_en.png"></a></li>
+						</ul>
+						<div class="logo_descr">Все об алкоголе</div>
+					</div>
+				</div>
+				<div class="col xl1">
+					<div class="age_limit">18<span>+</span></div>
+				</div>
+				<div class="col xl4 m12 s12 copyright_wrap"><div class="copyright">© 2017, ООО «Alcoguide». Все права защищены.</div></div>
+				<div class="col xl4 m12 s12 footer_menu">
+					<ul class="menu">
+						<li class="menu_item">
+							<a href="#" class="menu_list">Рейтинги</a>
+							<a href="#" class="menu_list">Коктейли</a>
+							<a href="#" class="menu_list">Обзоры</a>
+							<a href="#" class="menu_list">Тосты</a>
+						</li>
+					</ul>
+					<div class="agreement"><a href="#">Пользовательское соглашение</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.min.js'></script>
+
+	<script src="js/wNumb.js"></script>
+	<script src="libs/nouislider/nouislider.js"></script>
+	<script>
+		//var slider = document.getElementById('test-slider');
+		var rangeSlider = document.getElementById('test-slider');
+	  var moneyFormat = wNumb({
+	    decimals: 0,
+	    thousand: ',',
+	    prefix: '$'
+	  });
+		noUiSlider.create(rangeSlider, {
+		 start: [3000, 15000],
+		 connect: true,
+		 step: 1,
+		 orientation: 'horizontal', // 'horizontal' or 'vertical'
+		range: {
+				'min': [  2000 ],
+				'max': [ 20000 ]
+			},
+		 format: wNumb({
+			 decimals: 0
+		 })
+		});
+		// Set visual min and max values and also update value hidden form inputs
+	  rangeSlider.noUiSlider.on('update', function(values, handle) {
+	    document.getElementById('slider-range-value1').innerHTML = values[0]  + 'р.';
+	    document.getElementById('slider-range-value2').innerHTML = values[1]  + 'р.';
+	    document.getElementsByName('min-value').value = moneyFormat.from(
+	      values[0]);
+	    document.getElementsByName('max-value').value = moneyFormat.from(
+	      values[1]);
+	  });
+
+	  //var slider = document.getElementById('test-slider');
+		var rangeSlider = document.getElementById('test-slider2');
+	  var moneyFormat = wNumb({
+	    decimals: 0,
+	    thousand: ',',
+	    prefix: '$'
+	  });
+		noUiSlider.create(rangeSlider, {
+		 start: [4, 15],
+		 connect: true,
+		 step: 1,
+		 orientation: 'horizontal', // 'horizontal' or 'vertical'
+		range: {
+				'min': [  2 ],
+				'max': [ 20 ]
+			},
+		 format: wNumb({
+			 decimals: 0
+		 })
+		});
+		// Set visual min and max values and also update value hidden form inputs
+	  rangeSlider.noUiSlider.on('update', function(values, handle) {
+	    document.getElementById('slider-range-value3').innerHTML = values[0];
+	    document.getElementById('slider-range-value4').innerHTML = values[1];
+	    document.getElementsByName('min-value').value = moneyFormat.from(
+	      values[0]);
+	    document.getElementsByName('max-value').value = moneyFormat.from(
+	      values[1]);
+	  });
+	</script>
+
+</body>
+</html>

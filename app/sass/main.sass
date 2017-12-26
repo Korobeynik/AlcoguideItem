@@ -1,0 +1,1098 @@
+//@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	box-sizing: border-box
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-weight: 400
+	overflow-x: hidden
+	opacity: 1
+	color: #fff
+	zoom: 100%
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+//Base style
+.container
+	max-width: 1344px
+	width: 90%
+
+select
+	display: block
+
+.row .col
+	padding: 0			
+//Base style
+
+.header
+	background-color: #181818
+	padding-top: 10px
+	padding-bottom: 5px
+	.row
+		margin-bottom: 5px
+
+.logo_block 
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	.logo
+		display: inline-block
+		width: 100%
+		max-width: 300px
+		img
+			width: 100%
+
+.age_limit
+	width: 40px
+	height: 40px
+	background-color: #434c3b
+	border-radius: 50%
+	font-size: 18px
+	font-weight: 400
+	text-align: center
+	line-height: 40px
+	span
+		font-weight: 100
+
+.logo_descr
+	color: $brown
+	text-transform: uppercase
+	font-size: 13px
+	letter-spacing: 2.2px
+	font-weight: 300		
+.user-block
+	display: flex
+	margin-left: 5%
+	justify-content: space-between
+	flex-wrap: wrap
+.user-panel 
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.user-panel__list
+	display: flex
+	margin-top: 0
+	padding-top: 10px
+	.user-panel__item
+		a
+			font-size: 16px
+			color: #fff
+			font-weight: 300
+			padding-left: 30px
+			position: relative
+			letter-spacing: 0.8px
+			transition: all 0.3s ease
+			&:hover
+				opacity: 0.8
+			&:before
+				content: "|"
+				color: $brown
+				position: absolute
+				left: 15px
+
+			.fa
+				color: $brown
+				margin-right: 8px
+
+#user-login
+	display: flex
+	align-items: center
+	position: relative
+	margin-top: -6px
+	color: #fff
+	letter-spacing: 0.8px
+	&:hover
+		cursor: pointer
+	.user-avatar
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		overflow: hidden
+		position: relative
+	.fa
+		color: $brown
+		margin-right: 8px
+	.fa-angle-down
+		color: #fff	
+	&:before
+		content: "|"
+		color: $brown
+		position: absolute
+		left: -15px
+		top: 50%
+		transform: translateY(-50%)
+
+.list-lang
+	margin-top: 0
+	padding-top: 10px
+	margin-right: 5px
+
+.form-block
+	display: flex
+	justify-content: space-between
+.choise-product
+	max-width: 240px
+	width: 100%
+	position: relative
+	background-image: url("../img/down-arrow.svg")
+	select
+		background-color: $brown
+		color: #fff
+		border: none
+		border-radius: 20px
+		height: 40px
+		font-size: 15px
+		letter-spacing: 0.8px
+		font-weight: 300
+		padding: 0 20px
+		position: relative
+		-moz-appearance: none
+		text-indent: 0.01px
+		text-overflow: ''
+		-ms-appearance: none
+		appearance: none !important
+		background-image: url(../img/down-arrow.svg)
+		background-size: 10px
+		background-repeat: no-repeat
+		background-position: 90% 50%
+		&:focus
+			outline: none
+
+
+.form-block
+	.select-wrapper span.caret
+		color: transparent
+		z-index: 100
+		right: 20px
+		top: 3px
+		background-image: url(../img/down-arrow.png)
+		background-repeat: no-repeat
+	.select-wrapper
+		color: #fff
+	.select-wrapper input.select-dropdown
+		box-sizing: border-box
+		padding-left: 15px		
+	.choise-product
+		max-width: 240px
+		width: 100%
+		position: relative
+		//background-image: url("../img/down-arrow.png")
+		//margin-bottom: 20px
+		select
+			background-color: #fff
+			color: #ff2233
+			border: none
+			border-radius: 3px
+			height: 40px
+			font-size: 13px
+			letter-spacing: 0.8px
+			font-weight: 600
+			padding: 0 20px
+			position: relative
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			-ms-appearance: none
+			appearance: none !important
+			// background-image: url(../img/down-arrow.png)
+			background-size: 10px
+			background-repeat: no-repeat
+			background-position: 90% 50%
+			display: none
+			option
+				font-weight: 600
+			&:focus
+				outline: none
+			&:hover
+				cursor: pointer
+
+	.select-wrapper input.select-dropdown
+		background-color: #a28064
+		border-radius: 20px
+		border: none
+		height: 40px
+		font-size: 13px
+		letter-spacing: 0.8px
+		font-weight: 300											
+
+	.dropdown-content li>a, .dropdown-content li>span
+		color: #fff
+		font-size: 13px
+		font-weight: 300
+
+	.dropdown-content
+		background-color: #a28064
+		li
+			border-bottom: 1px solid $bord
+			span
+				color: #fff
+
+.reviews
+	.select-wrapper span.caret
+		color: transparent
+		z-index: 100
+		right: 20px
+		top: 3px
+		background-image: url(../img/down-arrow.png)
+		background-repeat: no-repeat
+	.select-wrapper
+		color: #fff
+	.select-wrapper input.select-dropdown
+		box-sizing: border-box
+		padding-left: 15px		
+	.choise-product
+		max-width: 240px
+		width: 100%
+		position: relative
+		//background-image: url("../img/down-arrow.png")
+		//margin-bottom: 20px
+		select
+			background-color: #fff
+			color: #ff2233
+			border: none
+			border-radius: 3px
+			height: 40px
+			font-size: 13px
+			letter-spacing: 0.8px
+			font-weight: 600
+			padding: 0 20px
+			position: relative
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			-ms-appearance: none
+			appearance: none !important
+			// background-image: url(../img/down-arrow.png)
+			background-size: 10px
+			background-repeat: no-repeat
+			background-position: 90% 50%
+			display: none
+			option
+				font-weight: 600
+			&:focus
+				outline: none
+			&:hover
+				cursor: pointer
+
+	.select-wrapper input.select-dropdown
+		background-color: #a28064
+		border-radius: 20px
+		border: none
+		height: 40px
+		font-size: 13px
+		letter-spacing: 0.8px
+		font-weight: 300											
+
+	.dropdown-content li>a, .dropdown-content li>span
+		color: #fff
+		font-size: 13px
+		font-weight: 300
+
+	.dropdown-content
+		background-color: #a28064
+		li
+			border-bottom: 1px solid $bord
+			span
+				color: #fff				
+
+#search
+	width: 100%
+	max-width: 360px
+	background-color: #464647
+	border-radius: 20px
+	height: 40px
+	border: none
+	font-size: 15px
+	letter-spacing: 0.8px
+	font-weight: 300
+	position: relative
+	box-sizing: border-box
+	color: #fff
+	#file
+		width: 19px
+		height: 19px
+		border: none
+		display: inline-block
+		opacity: 0
+		padding: 0
+		position: relative
+		z-index: 100
+		&:hover
+			cursor: pointer
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			background-color: red
+	span
+		position: absolute
+		left: 15px
+		color: #787570
+		font-size: 13px 
+		top: 50%
+		transform: translateY(-50%)
+	input
+		border: none
+		padding: 0 20px 0 65px
+		height: 100%
+		color: #fff
+		&:focus
+			border: none
+			box-shadow: none
+	&:focus
+		outline: none
+		padding: 0 20px
+		box-shadow: none
+		margin: 0
+.submit-btn__wrap
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: 15px
+	input
+		&:focus
+			outline: none
+	.fa
+		position: absolute
+		top: 0
+		left: 0
+		font-size: 19px
+.file-btn__wrap
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	right: 45px
+	padding: 0
+	.fa
+		position: absolute
+		top: 2px
+		left: 0
+		font-size: 16px		
+
+.input-btn
+	width: 19px
+	height: 19px
+	display: inline-block
+
+
+
+#submit
+	display: inline-block
+	width: 100%
+	height: 100%
+	z-index: 100
+	border: none
+	position: relative
+	background-color: transparent
+
+
+.menu
+	display: flex
+	justify-content: flex-end
+	margin-top: 0
+	.menu_list
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 700
+		color: $brown
+		letter-spacing: 2.5px
+		display: inline-block
+		margin-right: 25px
+		position: relative
+		&:after
+			content: "|"
+			color: $brown
+			position: absolute
+			right: -22%
+		&:last-child
+			margin-right: 0
+			&:after
+				display: none
+
+.promo
+	position: relative
+	background-color: #000
+	img
+		max-width: 100%
+		display: block
+
+.promo-text
+	position: absolute
+	left: 33vw
+	top: 12vw
+	color: #987e65
+	font-size: 35px
+	line-height: 1.6em
+	font-weight: 100
+	text-transform: uppercase
+	letter-spacing: 8px
+	span
+		font-size: 45px
+		color: #fff
+		font-weight: 700
+		letter-spacing: 8px
+
+.rubrics
+	background-color: #000
+	padding-bottom: 80px
+	.row
+		margin-bottom: 0
+		display: flex
+		flex-wrap: wrap
+
+.rubric-item
+	width: calc(100%/3)
+	display: block
+	color: #fff
+	transition: opacity 0.2s ease
+	display: flex
+	flex-direction: column
+	&:hover
+		opacity: 0.8
+	&:nth-child(2n)
+		.rubric-item__title
+			background-color: #421f25
+		.rubric-item__content
+			.rubric-item__image
+				background-color: #434c3b
+	&:nth-child(3n)
+		.rubric-item__title
+			background-color: #574738
+		.rubric-item__content
+			.rubric-item__image
+				background-color: #2a1f27
+	&:nth-child(4n)
+		.rubric-item__title
+			background-color: #574738
+		.rubric-item__content
+			.rubric-item__image
+				background-color: #2a1f27
+	&:nth-child(6n)
+		.rubric-item__title
+			background-color: #421f25
+		.rubric-item__content
+			.rubric-item__image
+				background-color: #434c3b									
+
+.rubric-item__title
+	display: flex
+	justify-content: space-between
+	padding: 25px 10px 25px 10px
+	background-color: #2a1f27
+	position: relative
+	z-index: 10
+.title-text
+	font-size: 19px
+	margin: 0
+	padding: 0
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 4.8px
+
+.title-price
+	color: $brown
+	font-size: 17px
+	font-weight: 400
+	letter-spacing: 4.8px
+	display: block
+	line-height: 110%
+
+.rubric-item__content
+	position: relative
+	width: 100%
+	overflow: hidden
+	min-height: 250px
+	display: flex
+	.rubric-item__bg
+		display: block
+		position: absolute
+		right: 0
+		bottom: 0
+	.rubric-item__image
+		background-color: #421f25
+		width: 30%
+		background-color: #421f25
+		text-align: center
+		position: relative
+		z-index: 10
+		display: flex
+		align-items: center
+		justify-content: center
+		img
+			max-width: 100%
+
+.favorite
+	background-color: #fff
+	padding-top: 20px
+	padding-bottom: 20px
+.base-title
+	color: #333332
+	font-size: 23px
+	text-transform: uppercase
+	font-weight: 700
+	letter-spacing: 3.1px
+	display: flex
+	align-items: center
+	line-height: 1.2em
+	margin-bottom: 40px
+	img
+		margin-right: 15px
+.favorite-drinks
+	display: flex
+	flex-direction: column
+.favorite-drinks__item-wrap
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.col
+		width: 23.5% !important
+		margin-left: 0 !important
+
+.favorite-drinks_wrap
+	display: flex
+	justify-content: space-between
+
+.favorite-drinks__star
+	position: absolute
+	right: 8px
+	top: 8px
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	line-height: 40px
+	text-align: center
+	background-color: $brown
+	&:hover
+		cursor: pointer
+	.fa
+		font-size: 19px
+
+.favorite-drinks__item
+	box-shadow: inset 0 0 0px 1px #abb8be
+	position: relative
+	margin-bottom: 30px
+
+.favorite-drinks__item_img
+	display: block
+	max-width: 100%
+	width: 100%
+
+.favorite-drinks__item_content
+	padding: 15px
+.favorite-drinks__item_title
+	display: block
+	font-size: 16px
+	font-weight: 700
+	text-align: center
+	letter-spacing: 2px
+	line-height: 1.3em
+	color: #333332
+	text-transform: uppercase
+
+.favorite-drinks__item_price
+	font-size: 24px
+	font-weight: 700
+	text-align: center
+	letter-spacing: 3.1px
+	color: $brown
+	margin: 10px 0
+.favorite-drinks__item_brand
+	display: flex
+	justify-content: space-between
+	margin-bottom: 10px
+	.item-brand_text
+		font-size: 14px
+		font-weight: 400
+		color: $gray
+		letter-spacing: 0.5px
+	.item-brand_name
+		font-size: 14px
+		font-weight: 400
+		color: #8b735c
+		letter-spacing: 0.5px	
+
+.favorite-drinks__item_rating
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 10px
+	.item_rating_star
+		.fa
+			font-size: 24px
+			color: $brown
+.favorite-drinks__item_statistics
+	font-size: 13px
+	color: $gray
+	display: block
+	a
+		display: block
+		color: $gray
+	span
+		display: inline-block
+		color: $brown
+		margin-right: 7px
+		text-decoration: underline
+.favorite-drinks__item_about
+	display: flex
+	justify-content: space-between
+	.item_about_history
+		color: #333332
+		font-size: 14px
+		font-weight: 400
+		display: inline-block
+		text-decoration: underline
+	.item_about_analog
+		font-size: 13px
+		color: $gray
+		display: block
+		span
+			display: inline-block
+			color: $brown
+			text-decoration: underline
+			margin-right: 5px
+
+.favorite-cocktails__title
+	margin-bottom: 32px
+.favorite-cocktails
+	padding-right: 1.5% !important
+	.favorite-cocktails__item
+		background-color: #421f25
+		padding: 5px 15px
+		display: flex
+	.favorite-cocktails__item_avatar
+		margin-right: 13px
+	.favorite-cocktails__item_title
+		font-size: 13px
+		line-height: 1
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: 1.7px
+	.favorite-cocktails__item_based
+		line-height: 1
+		.item_based_text
+			font-weight: 400
+			color: $brown
+			font-size: 13px
+			letter-spacing: 0.6px
+			display: inline-block
+		.item_based_name
+			color: #fff
+			font-weight: 400
+			font-size: 13px
+			letter-spacing: 0.6px
+			display: inline-block				
+	.item_rating_star
+		line-height: 1.5em
+		.fa
+			font-size: 14px
+			color: $brown
+			margin-right: 8px
+.favorite-cocktails__item_title
+	color: #fff
+.favorite-cocktails__item_content
+	width: 100%
+	.favorite-drinks__item_statistics
+		display: flex
+		justify-content: space-between
+		width: 100%
+		a
+			display: inline-block
+			margin-right: 5px
+			color: $brown
+			span
+				color: #fff
+
+.favorite-cocktails__item:nth-child(2)
+	background-color: #574738
+.favorite-cocktails__item:nth-child(3)
+	background-color: #2a1f27
+.favorite-cocktails__item:nth-child(4)
+	background-color: #434c3b
+.favorite-cocktails__item:nth-child(5)
+	background-color: #413739
+
+.content
+	background-color: #f0e9e5
+	padding: 40px 0 50px 0
+
+.content-wrap
+	display: flex
+	justify-content: space-between
+	.col.xl4
+		width: 32%
+		margin-left: 0
+
+
+.content-wrap
+	.base-title
+		min-height: 60px
+	.base_content_item
+		display: flex
+		background-color: #fff
+		padding: 10px
+		min-height: 100px
+		margin-bottom: 15px
+		.favorite-cocktails__item_avatar
+			margin-right: 10px
+		.favorite-cocktails__item_title
+			color: #333332
+			text-transform: uppercase
+			font-weight: 700
+			font-size: 14px
+			letter-spacing: 1px
+			line-height: 15px
+		.favorite-cocktails__item_based
+			display: flex	
+		.item_based_text
+			color: $gray
+			margin-right: 10px
+			letter-spacing: 1px
+		.item_based_name
+			color: $brown	
+			letter-spacing: 1px	
+
+.base_content_item_wrap
+	display: flex
+	align-items: center
+	.item_rating_star
+		width: 65%
+		.fa
+			margin-right: 6px
+			color: $brown
+	.favorite-drinks__item_statistics
+		a
+			color: $gray
+			span
+				color: $brown
+				text-decoration: underline		
+
+.content-wrap .reviews-item .favorite-cocktails__item_avatar,
+.content-wrap .new-drinks_item .favorite-cocktails__item_avatar
+	margin-right: 20px
+	padding-left: 4%
+
+
+.reviews_name
+	font-size: 14px
+	color: $brown
+	font-weight: 400
+
+.content-wrap .base_content_item
+	.title_review
+		display: block
+		line-height: 15px
+
+.new-drinks_item
+	.base_content_item_wrap
+		display: block
+		.favorite-drinks__item_statistics
+				justify-content: flex-start		
+
+
+
+.footer
+	background-color: #0e0e10
+	padding: 10px 0 15px 0
+	.menu_list:after
+		display: none
+	.menu
+		margin-top: 1%
+		margin-bottom: 5px
+		.menu_list
+			color: #fff
+	.row
+		margin-bottom: 0
+
+.footer_lang
+	display: flex
+	justify-content: space-between
+	.list-lang
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+			margin-right: 13px
+			position: relative
+			&:last-child
+				&:before
+					display: none
+			&:before
+				content: "|"
+				position: absolute
+				right: -10px
+				top: -2px
+				color: #39393b
+	.logo_descr
+		margin-right: 5%
+		color: #39393b
+		border-top: 1px solid #39393b
+
+.copyright
+	font-size: 13px
+	letter-spacing: 0.6px
+	color: #39393b
+	font-weight: 300
+	width: 100%
+	text-align: center			
+	margin-top: 10%	
+
+.agreement
+	text-align: right
+	a
+		color: $brown
+		font-size: 13px
+		font-weight: 300
+
+.mobile-menu
+	display: none
+
+.content__info-top
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+	.favorite-drinks__title
+		color: #333332
+		font-size: 19px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		margin-bottom: 20px
+		span
+			color: $brown
+			letter-spacing: 1px
+			display: inline-block
+			margin-right: 10px
+	.choise-product
+		position: relative
+		top: -5px		
+
+.content__info-top
+	.select-wrapper span.caret
+		color: transparent
+		z-index: 100
+		right: 20px
+		top: 3px
+		background-image: url(../img/down-arrow2.png)
+		background-repeat: no-repeat
+	.select-wrapper
+		color: #333332
+	.select-wrapper input.select-dropdown
+		box-sizing: border-box
+		padding-left: 15px		
+	.choise-product
+		max-width: 240px
+		width: 100%
+		position: relative
+		//background-image: url("../img/down-arrow.png")
+		margin-bottom: 20px
+		select
+			background-color: #fff
+			color: #ff2233
+			border: none
+			border-radius: 3px
+			height: 40px
+			font-size: 13px
+			letter-spacing: 0.8px
+			font-weight: 600
+			padding: 0 20px
+			position: relative
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			-ms-appearance: none
+			appearance: none !important
+			// background-image: url(../img/down-arrow.png)
+			background-size: 10px
+			background-repeat: no-repeat
+			background-position: 90% 50%
+			display: none
+			option
+				font-weight: 600
+			&:focus
+				outline: none
+			&:hover
+				cursor: pointer
+
+	.select-wrapper input.select-dropdown
+		background-color: #d0d0d0
+		border-radius: 20px
+		border: none
+		height: 40px
+		font-size: 13px
+		letter-spacing: 0.8px
+		font-weight: 300											
+
+	.dropdown-content li>a, .dropdown-content li>span
+		color: #fff
+		font-size: 13px
+		font-weight: 300
+
+	.dropdown-content
+		background-color: #d0d0d0
+		li
+			border-bottom: 1px solid $bord
+			span
+				color: #333
+
+
+.pagination__wrap
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+.pagination
+	display: flex
+	align-items: center
+	position: relative
+	top: -4px
+	.pagination__link
+		display: inline-block
+		width: 19px
+		height: 9px
+		background-image: url("../img/arrow-left.png")
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		&.next
+			background-image: url("../img/arrow-right.png")
+			margin-left: 5px
+		&.prev
+			margin-right: 5px	
+
+.pagination__item
+	display: inline-block
+	width: 27px
+	height: 27px
+	background-color: #e8e8e8
+	text-align: center
+	border-radius: 50%
+	line-height: 27px
+	color: #333332
+	font-size: 12px
+	font-weight: 400
+	letter-spacing: 0.6px
+	margin: 0 4px
+	&.active
+		background-color: $brown
+		color: #fff
+
+
+.footer__menu
+	display: flex
+	justify-content: space-between
+	li
+		display: inline-block
+		position: relative
+		&:before
+			content: ""
+			width: 4px
+			height: 4px
+			border-radius: 50%
+			background-color: $brown
+			position: absolute
+			top: 50%
+			left: 135%
+		&:last-child
+			&:before
+				display: none	
+		a
+			display: block
+			color: $brown
+			font-size: 13px
+			font-weight: 300
+			letter-spacing: 0.67px
+
+.filter__mobile
+	display: none
+
+.breadcrumbs-wrap
+	.row
+		margin-bottom: 0
+
+.breadcrumbs
+	padding: 5px 0
+	li
+		display: inline-block
+		margin-right: 60px
+		position: relative
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 14px
+			height: 7px
+			background-image: url("../img/arrow.png")
+			background-size: cover
+			right: -35px
+			top: 10px
+		&:last-child
+			&:before
+				display: none
+		&.active
+			a
+				color: $brown
+		a
+			color: $gray
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: 0.67px
+
+
+
+
+
+
+
+
+
+
+@import "filter"
+@import "product"
+@import "base"
+@import "media" // Всегда в конце

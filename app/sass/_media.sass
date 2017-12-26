@@ -1,0 +1,275 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.logo_block
+		justify-content: center
+	.age_limit	
+		margin: 0 3%
+	.user-block
+		justify-content: center	
+	.user-login
+		margin-left: 2%
+	.user-panel__list .user-panel__item a:before
+		display: none
+	#user-login:before
+		display: none
+	.choise-product
+		margin-right: 5%
+	.rubric-item__content .rubric-item__image
+		width: 40%
+	.favorite-drinks
+		margin-bottom: 5%
+	.content-wrap
+		flex-wrap: wrap
+	.base_content_item
+		//box-shadow: inset 0 0 1px #909090
+	.content-wrap .col.xl4
+		width: 100%
+	.base-title
+		width: 100%
+	.menu
+		justify-content: center
+	.agreement
+		text-align: center
+	footer	
+		.age_limit
+			display: none
+	.copyright
+		margin-top: 15px											
+					
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px)
+	/**/
+	.form-block
+		justify-content: center
+		margin-bottom: 2%
+		justify-content: space-evenly
+	.title-text
+		font-size: 16px	
+
+	.menu
+		justify-content: center
+	body,
+	html
+		overflow-x: hidden
+	ul.list-lang
+		width: 100%
+
+	.catalog__filter
+		.filter__title
+			display: none
+	.filter__mobile
+		display: block
+		background-color: $bord
+		.filter__title
+			padding: 10px 0
+			margin: 0
+	.header
+		padding-bottom: 0
+	.filter
+		display: none
+	.col.xl12.m6.s12.new-drinks_item.base_content_item.hoverable
+		margin-bottom: 5px
+	.content__info-top
+		flex-wrap: wrap
+		margin-top: 40px
+	.pagination
+		justify-content: center
+		margin-bottom: 15px
+	.content__info-top .choise-product
+		max-width: 100%	
+	.footer__menu
+		display: none
+	.favorite-cocktails .favorite-cocktails__item
+		margin-bottom: 5px
+	.single-product__item
+		flex-wrap: wrap
+	.single-product__slider
+		margin: 0 auto
+		margin-bottom: 50px
+	.single-product__info
+		width: 100%
+		margin-bottom: 30px
+	.single-product__sidebar
+		width: 100%
+	.about-product__wrap, .reviews
+		width: 100%
+	.add-review textarea
+		width: 90%
+		margin-bottom: 10px
+	.add-review button
+		margin-left: 0
+	.add-review
+		justify-content: center
+	.col.xl12.l6.m6.s12.favorite-cocktails__item.base_content_item
+		width: 100%														
+
+		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.form-block
+		flex-wrap: wrap		
+	.promo-text
+		display: none
+	.footer .menu
+		display: none
+	.rubric-item
+		margin-bottom: 20px	
+	.favorite-drinks__item-wrap,
+	.content-wrap
+		flex-wrap: wrap
+	.favorite-drinks__item
+		margin-bottom: 20px
+	.content-wrap .col.xl4
+		width: 100%
+	.footer
+		.logo_block
+			margin-bottom: 10px
+
+		.age_limit
+			display: none
+		.agreement
+			text-align: center
+	.choise-product
+		margin-right: 0
+	.menu .menu_list:after
+		display: none
+	.user-block
+		background-color: #181818
+	.user-panel__list
+		flex-wrap: wrap
+	li.user-panel__item
+		width: 100%
+		margin-bottom: 5px
+	.user-panel__list .user-panel__item a
+		padding-left: 0
+		margin-bottom: 10px
+	#user-login
+		width: 100%
+		margin-left: 0
+	.user-panel
+		//padding-top: 40px
+	.user-block
+		padding-bottom: 40px
+		display: none
+	.logo_block
+		padding-bottom: 15px
+	.mobile-menu
+		display: block
+		text-align: center
+		font-weight: 500
+		color: $brown
+		letter-spacing: 1.4px
+		margin-bottom: 15px
+	.favorite-drinks__item-wrap .col
+		width: 49% !important
+	.title-text
+		letter-spacing: 2.8px	
+	.title-price
+		letter-spacing: 0.8px																						
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	/**/
+	.favorite-drinks__item-wrap .col
+		width: 100% !important
+	.base_content_item_wrap
+		flex-wrap: wrap
+	.favorite
+		padding-bottom: 30px
+	.choise-product
+		max-width: 100%
+		margin-bottom: 15px
+	ul.menu
+		text-align: center
+	.title-price
+		font-size: 12px
+	#search
+		max-width: 100%
+	.menu .menu_list
+		font-size: 11px
+	ul.list-lang
+		width: 50%
+	.content__info-top .favorite-drinks__title
+		font-size: 16px
+		letter-spacing: 0.5px
+	.single-product__slider
+		width: 320px
+	.owl-carousel .owl-dot
+		width: 36px!important
+		height: 55px!important
+	.breadcrumbs li
+		margin-right: 25px
+	.breadcrumbs li:before
+		right: -24px
+	.single-product__info
+		padding-left: 0
+	.single-product__title
+		letter-spacing: 1px
+		font-size: 22px
+	.single-product__rating
+		flex-wrap: wrap
+	.single-product__table
+		flex-wrap: wrap
+	ul.product__table__list
+		width: 100%
+	.product__table__item .name
+		width: 130px
+	.combination__image
+		width: 45%
+		margin: 0
+		margin-bottom: 10px
+		img
+			max-width: 100%
+	.combination
+		justify-content: space-around
+	.about-product__title
+		flex-wrap: wrap
+	.about-product__title .choise-product
+		width: 100%
+		margin: 0
+		margin-top: 20px
+		margin-bottom: 0px
+	.about-product__title .filter__form__category__item
+		width: 100%
+		margin-left: 0
+		text-align: left												
+							
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.menu .menu_list
+		font-size: 11px
+	.menu .menu_list
+		margin-right: 8px
+	ul.list-lang
+		width: 40%
+	.content__info-top .favorite-drinks__title
+		font-size: 15px
+		letter-spacing: 0.5px
+	.breadcrumbs li a
+		font-size: 11px
+	.breadcrumbs li:before
+		top: 11px
+		right: -22px
+	.favorite-drinks__item_rating .item_rating_star .fa
+		font-size: 15px
+	.single-product__title
+		font-size: 20px
+	.owl-nav
+		//display: none
+	.single-product__slider
+		width: 300px						
+
